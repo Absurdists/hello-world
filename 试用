@@ -1,0 +1,33 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+	char ch[13][13]={'+'};	//棋盘大小 
+	int m,n;
+	for(int i=0;i<=12;i++)
+	{
+		for(int j=0;j<=12;j++)
+			printf("%s ",p[i][j]);
+		printf("\n");
+	}
+	for(int t=1;t<=100;t++)
+	{
+		scanf("%d%d",&m,&n);
+		while(!p[m][n]=='+')
+		 {
+		 	printf("不可覆盖棋子！\n请重新输入：");
+		 	scanf("%d%d",&m,&n);
+		 } 
+		if(t%2==1)
+			ch[m][n]=;
+		else
+		p[m][n]=2;
+		for(int i=0;i<=12;i++)
+		{
+			for(int j=0;j<=12;j++)
+				printf("%s ",ch[i][j]);
+			printf("\n");
+		}
+	}
+	
+}
